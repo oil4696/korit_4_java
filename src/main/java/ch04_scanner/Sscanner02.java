@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Sscanner02 {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         /*
             ,next() : string 데이터를 받을 때 띄어쓰기를 인정하지 않음
@@ -20,19 +20,55 @@ public class Sscanner02 {
             10년 후 나이는 나이+10입니다.
        */
 
-
         String name;
-        System.out.print("이름을 입력하시요 : ");
-        name = scan.next();
-        scan.nextLine();
-        int age;
-        System.out.print("나이를 입력하세요 : ");
-        age = scan.nextInt();
+        String age;
         String address;
-        scan.nextLine();
-        System.out.print("주소를 입력하세요 : ");
-        address = scan.nextLine();
+        int age10;
 
+        System.out.print("당신의 이름은 무엇인가요? : ");
+        name = scanner.next();
+        System.out.print("당신의 나이는 어떻게 돼나요? : ");
+        age = scanner.next();
+        scanner.nextLine();
+        System.out.print("당신의 주소는 어떻게 돼나요? : ");
+        address = scanner.nextLine();
+
+        // age10 = age + 10;
+
+//        System.out.println("당신의 10년 후 나이는 어떻게 돼나요? : " + age10);
+
+
+
+//        String name;
+//        System.out.print("이름을 입력하시요 : ");
+//        name = scan.next();
+//        String age;
+//        System.out.print("나이를 입력하세요 : ");
+//        age = scan.next();
+//        scan.nextLine();
+//        String address;
+//        System.out.print("주소를 입력하세요 : ");
+//        address = scan.nextLine();
+
+
+//        String name;
+//        String address;
+//        int age;
+//        int age10;
+
+
+//        System.out.print("이름을 입력하세요 >>> ");
+//        name = scanner.next();
+//        System.out.print("나이를 입력하세요 >>> ");
+//        age = scanner.nextInt();
+//        scanner.nextLine();
+//        System.out.print("주소를 입력하세요 >>> ");
+//        address = scanner.nextLine();
+//        int age10 = age + 10;
+//        age10 = age + 10;
+//
+//        System.out.println("안녕하세요, 제 이름은 " + name + "입니다. " + address + "에 살고 있습니다." );
+//        System.out.println("10년 후 나이는 " + age10 + "살입니다.");
 
 
 
