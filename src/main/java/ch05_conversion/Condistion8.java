@@ -38,19 +38,19 @@ public class Condistion8 {
         }
         System.out.println(year + "는 " +  lyear);
 
-        // sout이 또 반복되는 것 같아서  줄일 수 도 있음
-        // 음수 값이면 어떻게 처리할지
-        // 더 극단적으로 줄일 방법은 없을지 (논리 연산자 사용  / 상황 연산자 사용)
+        // 논리 연산자 사용
+        System.out.print("연도를 입력하세요 >>> ");
+        // 변수 선언 및 초기화 바로 하겠습니다.
+        int year2 = scanner.nextInt();
+        String leapYear = "";
 
-        // 반복을 줄이기 위한 LeapYear 변수를 선언
-//        if(year % 400 == 0 ) {
-//            lyear = "맞";
-//        } else if (year % 100 == 0) {
-//            lyear = "아니";
-//        } else if (year % 4 == 0) {
-//            lyear = "맞";
-//        } else {
-//            lyear = "아니";
+        if ((year2 % 4 == 0 && year2 % 100 != 0) || (year2 % 400 == 0)) {
+            leapYear = "윤년입니다.";
+        } else {          // 여기 조건은 좀 달라집니다. 4로 나누어 떨어지지 않거나 // 100으로 나누어지거나
+            leapYear = "윤년이 아닙니다";
+        }
+
+        System.out.println(year2 + "년은 " + leapYear);
 
 
 

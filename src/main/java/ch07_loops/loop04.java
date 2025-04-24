@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 /*
     for 반복문(for loop)
-    : 대부분의 겨우에 명확한 횟수가 고저오ㅓ디어 있을 떄 사요ㅕㅇ하는 반복문
+    : 대부분의 경우에 명확한 횟수가 고정되어 있을 때 사용하는 반복문
 
-    향식 :
-    for(*tlwwkrrkqt ; w종료값 ; 종료값) {
-    반복실행문
+    형식 :
+    for(시작값 ; 종료값 ; 증감값) {
+        반복실행문
     }
  */
 public class loop04 {

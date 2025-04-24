@@ -1,8 +1,13 @@
 package ch07_loops;
 /*
+    중첩 while문(Nested while loop)
     while(조건식1) {
-        반복실행문 1-a
-        whi
+        반복실행문1-a
+        while(조건식2) {
+            반복실행문2
+        }
+        반복실행문1-b
+    }
  */
 public class Loop02 {
     public static void main(String[] args) {

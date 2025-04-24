@@ -1,4 +1,4 @@
-package ch02_start;
+package ch02_variable;
 /*
     주석(commment) : Java 프로그램의 경우 폴더 및 파일의 전체 코드를 컴파일링 하는데,
     거기서 오류가 하나라도 발생하면 전체 프로그램이 실행x
