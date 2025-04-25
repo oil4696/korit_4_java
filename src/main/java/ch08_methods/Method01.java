@@ -64,26 +64,16 @@ public class Method01 {
             를 출력하시오.
          */
 
-//        Scanner scanner = new Scanner(System.in);
-//        String name;
-//        int age;
-//        System.out.print("이름을 입력하세요 : ");
-//        String name = scanner.nextLine();
-//        System.out.print("나이를 입력하세요 : ");
-//        int age = scanner.nextInt();
-//        String introduction = introduce(name, age);
-//        System.out.println(introduction);
-
-        // Scanner import
         Scanner scanner = new Scanner(System.in);
         String name;
         int age;
-        System.out.print("이름을 입력하세요 >>> ");
+        System.out.print("이름을 입력하세요 : ");
         name = scanner.nextLine();
-        System.out.print("나이를 입력하세요 >>> ");
+        System.out.print("나이를 입력하세요 : ");
         age = scanner.nextInt();
         String introduction = introduce(name, age);
         System.out.println(introduction);
+
 
         /*
             함수형 프로그래밍 (Function programming) :

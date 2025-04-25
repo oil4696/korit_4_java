@@ -1,9 +1,11 @@
-package ch_ClassA;
+package ch09_classes;
 
 public class Car {
     //필드 생성
     String color;
     int speed;
+    //생서자를 배우면 해결되는 개념
+//    String eval2 = (speed > 100 ? "빠릅니다." : "그냥 저냥 입니다.");
 
     // 매서드 생성
     public void drive(){
@@ -11,6 +13,7 @@ public class Car {
     }
     public String brake() {
         return color + "자동차가 멈췄습니다.";
+        // return 은 위나 아래처럼  sout을 못하고 바로 return이 나와서 한줄 밖게 춣력이 안되는가?
     }
     public void diplayCarLnfo(){
         String eval = (speed > 100 ? "빠릅니다." : "그냥 저냥 입니다.");
@@ -18,39 +21,6 @@ public class Car {
         System.out.println("최고 속도는" + speed + " km/h입니다." + eval);
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         /*
         색상(빨강/노랑 etc), 속도(100, 200 etc) 필드를 정의하고
@@ -72,4 +42,6 @@ public class Car {
          car2의 색깔 노랑 / 속도 200으로 생성한 후
          각각 drive()/brake()/displayCarInfo()를 실행하시고, 콘솔창에 결과를 출력하시오.
      */
+
+    //constructor
 }

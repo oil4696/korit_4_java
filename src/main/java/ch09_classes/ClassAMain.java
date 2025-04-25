@@ -1,4 +1,4 @@
-package ch_ClassA;
+package ch09_classes;
 
 import java.util.Scanner;
 
