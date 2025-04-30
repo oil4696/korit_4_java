@@ -38,8 +38,8 @@ public class CentralControl {
         // 배열을 반복문을 돌려가지고 null값 빠져나오는 애를 return 하면 되겠죠.
         // 이상의 경우 굳이 정신나간 방법으로 코딩하지 않는 이상 가장 빨리 만나게 되는 null의
         // index number가 반환될겁니다.
-        for (int i = 0 ; i < deviceArray.length ; i++) {
-            if(deviceArray[i] == null) {
+        for (int i = 0; i < deviceArray.length; i++) {
+            if (deviceArray[i] == null) {
                 return i;
             }
         }
@@ -58,7 +58,7 @@ public class CentralControl {
     public void powerOn() {
         // deviceArray 배열 내에 있는 각 element들은 Power 서브 클래스의 인스턴스에 해당
         // 그러면 .on() / .off()를 전부 다 가지고 있을 거고, instanceof를 쓸 필요 x
-        for ( Power device : deviceArray ) {
+        for (Power device : deviceArray) {
             if (device == null) {
                 System.out.println("장치가 등록되지 않은 슬롯입니다.");
                 continue;       // 메서드를 종료하는게 아니라 다음 반복으로 넘어가는 키워드
@@ -70,8 +70,8 @@ public class CentralControl {
     public void powerOff() {
         // 일반 for문으로 각 배열을 돌면서 .off() 시켜주세요.
         // main에서 호출하시면 됩니다. null인 경우에는 "장치가 등록되지 않은 슬롯입니다." 출력
-        for ( int i = 0 ; i < deviceArray.length ; i++ ) {
-            if(deviceArray[i] == null) {
+        for (int i = 0; i < deviceArray.length; i++) {
+            if (deviceArray[i] == null) {
                 System.out.println("장치가 등록되지 않은 슬롯입니다.");
                 continue;
             }
@@ -79,8 +79,41 @@ public class CentralControl {
         }
     }
 
+    // 이제 배열 내부를 돌면서 각 element 의 고유 메서드를 로출할 수 있돌옥 메서드를 작성할 예정
+    public void preformSpecificMethod() {
+        for (Power device : deviceArray) {
+            if (device instanceof Tv) {                                                //이 조건문이 true라면 해당 element는 tv의 인스턴스
+                Tv tv = (Tv) device;
+                tv.channelUp();
+            } else if (device instanceof LED) {
+                LED led = (LED) device;
+                led.changeColor();                                                   // 명시적 다운개스팅
+            } else if (device instanceof Mouse) {                                      // 마찬가지로 tv로 다운 캐스팅이 이루어져서 고유메서드 실행 가능
+                Mouse mouse = (Mouse) device;
+                mouse.leftClick();
+            } else if (device instanceof Speaker) {
+                Speaker speaker = (Speaker) device;
+                speaker.changeEqual();
+            }else if (device instanceof Computer){
+                Computer computer = (Computer) device;
+                computer.compute();
+            } else if (device instanceof Smartphone) {
+                Smartphone smartphone = (Smartphone) device;
+                smartphone.touchScreen();
+            }
+        }
 
 
 
 
+
+
+
+
+
+
+
+
+
+   }
 }

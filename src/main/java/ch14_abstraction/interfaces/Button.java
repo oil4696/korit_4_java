@@ -16,4 +16,9 @@ public abstract class Button implements Press, Up,Down{
     public String onUp(){
         return " 올립니다.";
     };
+
+    // 추후 다시 다운캐스팅을 한 이후에 실핼할 고유 메서드
+    public void compute(){
+        System.out.println("컴퓨터가 연산을 수행합니다.");
+    }
 }
