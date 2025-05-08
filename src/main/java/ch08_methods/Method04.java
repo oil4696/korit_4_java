@@ -1,6 +1,7 @@
 package ch08_methods;
 
-import java.util.Scanner;/*
+import java.util.Scanner;
+/*
     bmi 꼐산기 methodfmf 정의하고 실행시킬겁니다.
     메서드명 calculateBmi()
     return : void
